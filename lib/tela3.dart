@@ -60,8 +60,109 @@ class _MyHomePageState extends State<MyHomePage> {
                     backgroundImage: AssetImage('assets/images/tela2.png'),
                   ),
                 ),
-                const SizedBox(height: 15,),
-                Text('Mariana Silva', style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold)),
+                const SizedBox(height: 30),
+                Text(
+                  'Mariano Silvo',
+                  style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+                ),
+                const SizedBox(height: 20),
+                Text('marianosilvo@gmail.com', style: TextStyle(fontSize: 18)),
+                const SizedBox(height: 150),
+
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Column(
+                      //Primeira coluna, publicacoes.
+                      children: [
+                        const Text(
+                          '128',
+                          style: TextStyle(
+                            fontSize: 30,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        const SizedBox(height: 8),
+                        const Text(
+                          'Publicações',
+                          style: TextStyle(
+                            fontSize: 18,
+                            fontWeight: FontWeight.w500,
+                            fontStyle: FontStyle.italic,
+                            color: Colors.black87,
+                          ),
+                        ),
+                      ],
+                    ),
+
+                    Column(
+                      //Segunda coluna, Seguidores
+                      children: [
+                        const Text(
+                          '340',
+                          style: TextStyle(
+                            fontSize: 30,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        const SizedBox(height: 8),
+                        const Text(
+                          'Seguidores',
+                          style: TextStyle(
+                            fontSize: 18,
+                            fontWeight: FontWeight.w500,
+                            fontStyle: FontStyle.italic,
+                            color: Colors.black87,
+                          ),
+                        ),
+                      ],
+                    ),
+
+                    Column(
+                      //Terceira coluna, Seguindo
+                      children: [
+                        const Text(
+                          '512',
+                          style: TextStyle(
+                            fontSize: 30,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        const SizedBox(height: 8),
+                        const Text(
+                          'Seguindo',
+                          style: TextStyle(
+                            fontSize: 18,
+                            fontWeight: FontWeight.w500,
+                            fontStyle: FontStyle.italic,
+                            color: Colors.black87,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 150),
+                ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.blue[400],
+                    foregroundColor: Colors.white,
+                    minimumSize: Size(300, 60),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(20),
+                    ),
+                  ),
+
+                  onPressed: () {},
+                  child: Text(
+                    'Editar Perfil',
+                    style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.normal,
+                      color: Colors.white,
+                    ),
+                  ),
+                ),
               ],
             ),
           ),
