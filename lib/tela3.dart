@@ -44,20 +44,29 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ),
           ),
-          Column(
-            children: [
-              const SizedBox(height: 130),
 
-              const CircleAvatar(
-                radius: 55,
-                backgroundColor: Colors.grey,
+          SizedBox(
+            width: double.infinity,
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                const SizedBox(height: 135),
 
-                child: ,
-              )
-            ],
-          )
+                const CircleAvatar(
+                  radius: 70,
+                  backgroundColor: Colors.white,
+                  child: CircleAvatar(
+                    radius: 65,
+                    backgroundImage: AssetImage('assets/images/tela2.png'),
+                  ),
+                ),
+                const SizedBox(height: 15,),
+                Text('Mariana Silva', style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold)),
+              ],
+            ),
+          ),
         ],
       ),
-    );  
+    );
   }
 }
