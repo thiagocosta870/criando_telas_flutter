@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:telas_atividade/tela3.dart';
 
 void main() {
   runApp(MyApp());
