@@ -274,20 +274,23 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ),
             Expanded(child: Container()),
-            ElevatedButton(
-              onPressed: () {},
-              style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.deepPurple,
-                foregroundColor: Colors.white,
-                padding: EdgeInsets.symmetric(vertical: 20),
-                minimumSize: Size(double.infinity, 60),
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadiusGeometry.circular(10),
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 40),
+              child: ElevatedButton(
+                onPressed: () {},
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.deepPurple,
+                  foregroundColor: Colors.white,
+                  padding: EdgeInsets.symmetric(vertical: 20),
+                  minimumSize: Size(double.infinity, 60),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadiusGeometry.circular(10),
+                  ),
                 ),
-              ),
-              child: Text(
-                'Finalizar compra',
-                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                child: Text(
+                  'Finalizar compra',
+                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                ),
               ),
             ),
           ],
