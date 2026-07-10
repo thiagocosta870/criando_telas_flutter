@@ -103,7 +103,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             const Spacer(),
             Padding(
-              padding: const EdgeInsets.only(left: 20, right: 20, bottom: 40),
+              padding: const EdgeInsets.only(left: 20, right: 20, bottom: 20),
               child: Row(
                 children: [
                   Expanded(

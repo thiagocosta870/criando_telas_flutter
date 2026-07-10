@@ -34,7 +34,7 @@ class _MyHomePageState extends State<MyHomePage> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Container(
-            height: 480,
+            height: 300,
             width: double.infinity,
 
             decoration: BoxDecoration(
